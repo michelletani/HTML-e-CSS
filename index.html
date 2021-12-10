@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linguagens e Linguagens de Programação</title>
+</head>
+
+<body>
+    <header>
+        <h1>Linguagens HTML e CSS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Linguagem HTML</a>
+        <a href="#">Linguagem CSS</a>
+        <a href="#">Material de Apoio</a>
+    </nav>
+    <main>
+        <section>
+            <h1>Linguagem HTML</h1>
+            <h2>Tags</h2>
+            <h3>Main</h3>
+            <p>É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos. </p>
+            <h3>Section</h3>
+            <p>Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente
+                com um cabeçalho”.
+            </p>
+            <h3>Article</h3>
+            <p>Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um "Article" para delimitar um post de blog ou fórum, uma notícia, etc.</p>
+            <h3>Aside</h3>
+            <p>Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo "aside" está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto
+                apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”.</p>
+            <h3>Footer</h3>
+            <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um "aside"), mas possui informações sobre autoria do conteúdo, links adicionais,
+                mapa do site, documentos relacionados</p>
+            <p>A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela como a única possibilidade de criar o posicionamento de elementos de agrupamento semântico.
+            </p>
+            </br>
+            <h3>Modelo de Caixas</h3>
+            <p>Uma caixa dentro de outra "Aninhamento"</p>
+            <p>Tipos de caixa:</p>
+            <div class="panel">
+                <h4>Box-level</h4>
+                <p>Sempre inicia em uma linha nova, ocupa a largura inteira e quebra a linha.</p>
+                <p>Exemplos:</p>
+                <ul>
+                    <li>h1 - h6</li>
+                    <li>p</li>
+                    <li>div</li>
+                    <li>main</li>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>article</li>
+                    <li>aside</li>
+                    <li>footer</li>
+                    <li>form</li>
+                    <li>video</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h4>Inline-level</h4>
+                <p>Continua na mesma linha do conteúdo, não quebra a linha e a caixa ocupa exatamente o tamanho do conteúdo inserido na caixa.</p>
+                <p>Exemplos:</p>
+                <ul>
+                    <li>a</li>
+                    <li>strong</li>
+                    <li>span</li>
+                    <li>code</li>
+                    <li>small</li>
+                    <li>em</li>
+                    <li>sup</li>
+                    <li>sub</li>
+                    <li>label</li>
+                    <li>button</li>
+                    <li>input</li>
+                    <li>select</li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <hr><br>
+        <section>
+            <h1>Linguagem CSS</h1>
+            <div class="panel">
+                <h4>ID</h4>
+                <p>O id só pode ser utilizado para um único elemento.</p>
+                <p>Não pode ser utilizado espaço na nomenclatura.</p>
+                <p>Ex.: nome_do_id</p>
+                <p>Para inserir no código, é utilizada a "#"</p>
+                <p>Ex.: </p>
+                <p class="recuo_1">#nome_do_id { </p>
+                <p class="recuo_2">font-family: ... </p>
+                <p class="recuo_2">color: ... </p>
+                <p class="recuo_2">... </p>
+                <p class="recuo_1">} </p>
+            </div>
+            <div class="panel">
+                <h4>Class</h4>
+                <p>A class pode ser utilizada para diversos elementos.</p>
+                <p>Não pode ser utilizado espaço na nomenclatura.</p>
+                <p>Ex.: nome_da_class</p>
+                <p>Para inserir no código, é utilizado o "."</p>
+                <p>Ex.: </p>
+                <p class="recuo_1">.nome_da_class { </p>
+                <p class="recuo_2">font-family: ... </p>
+                <p class="recuo_2">color: ... </p>
+                <p class="recuo_2">... </p>
+                <p class="recuo_1">} </p>
+            </div>
+            <div class="panel">
+                <h4>Pseudo-classes</h4>
+                <p>É o estado de um determinado elemento no HTML.</p>
+                <p>Representado por "":"</p>
+                <p>Ex.:</p>
+                <p class="recuo_1">a: visited {</p>
+                <p class="recuo_2">color: #red</p>
+                <p class="recuo_1">}</p>
+            </div>
+            <div class="panel">
+                <h4>Pseudo-elementos</h4>
+                <p>Age nas classes, id, elementos, etc. Eles agem no conteúdo.</p>
+                <p>Representado por ""::"</p>
+                <p>Ex.:</p>
+                <p class="recuo_1">a:: after {</p>
+                <p class="recuo_2">content: ' link';</p>
+                <p class="recuo_1">}</p>
+            </div>
+            <div class="panel">
+                <h4>Sombras nas caixas</h4>
+                <p>A propriedade box-shadow e seus quatro valores (ordem):</p>
+                <ul>
+                    <li><strong>Deslocamento horizontal (h-offset):</strong> quanto a sombra vai andar para o lado direito (valores negativos causam deslocamento para a esquerda)</li>
+                    <li><strong>Deslocamento vertical (v-offset):</strong> quanto a sombra vai andar para baixo (valores negativos causam deslocamento para cima)</li>
+                    <li><strong>Embaçamento (blur):</strong> quanto a sombra vai se espalhar pelo fundo</li>
+                    <li><strong>Cor (color):</strong> cor da sombra. É possível usar transparência.</li>
+                </ul>
+                <p>Exemplo:</p>
+                <p class="recuo_1">box-shadow: 3px 5px 4px black;</p>
+                <p>Para sombras <strong>internar</strong> utlizar o "inset".</p>
+                <p>Exemplo:</p>
+                <p class="recuo_1">box-shadow: inset 3px 5px 4px black;</p>
+            </div>
+            <div class="panel">
+                <h4>Bordas</h4>
+                <h4>Bordas arredondadas</h4>
+                <p><strong>border-radius:</strong> arredonda os vértices</p>
+                <p>Exemplos:</p>
+                <p class="recuo_1">border-radius: 10px 10px 10px 10px</p>
+                <p class="recuo_1">border-radius: 10px 10px</p>
+                <p class="recuo_1">border-radius: 10px</p>
+                <h4>Bordas personalizadas</h4>
+                <p><strong>border-image: </strong>Utiliza uma imagem como borda.</p>
+                <p>Exemplo:</p>
+                <p class="recuo_1">border: 12px solid transparent;</p>
+                <p class="recuo_1">border-image: url('download.png') 50 repeat;</p>
+                <p><strong>Nota:</strong> Precisa ter a informação da borda.</p>
+            </div>
+        </section>
+        <h4>Padding</h4>
+        <p>Margem dentro da caixa, margem entre a borda da caixa e o conteúdo.</p>
+        <h4>Border</h4>
+        <p>Borda da caixa, a linha visível. Pode ter cor, espessura e formato.</p>
+        <h4>Outline</h4>
+        <p>Traçado visual que fica fora da borda.</p>
+        <h4>Margin</h4>
+        <p>Espaço fora da borda.</p><br>
+        <p><strong>Observações:</strong></p><br>
+        <p><strong>Ordem para inserir as medidas (margin e padding):</strong></p><br>
+        <p class="recuo_1"><strong>Modo completo:</strong> </p>
+        <p class="recuo_2">top - right - bottom - left</p>
+        <p class="recuo_2">exemplo: 0px 0px 0px 0px</p><br>
+        <p class="recuo_1"><strong>Shorthand:</strong> </p>
+        <p class="recuo_2">top/bottom - right/left</p>
+        <p class="recuo_2">exemplo: 0px 0px</p><br>
+        <p><strong>Ordem para inserir configurações:</strong></p>
+        <p class="recuo_2">Width - style - color</p>
+        <p class="recuo_2">exemplo: 10px solid black</p>
+        <br>
+        <hr><br>
+        <section>
+            <h1>Material de Apoio</h1>
+            <h3>Site de Paleta de Cores</h3>
+            <h3>Site de Imagens</h3>
+            <h3>Site de Ícones</h3>
+        </section>
+    </main>
+</body>
+
+</html>

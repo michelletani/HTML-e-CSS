@@ -1,0 +1,146 @@
+@charset "utf-8";
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor0: #38EFFC;
+    --cor1: #36D5E0;
+    --cor2: #27A9B3;
+    --cor3: #208C94;
+    --cor4: #155C61;
+}
+
+body {}
+
+header {
+    background-image: linear-gradient(to bottom, #38EFFC, #155C61);
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header>h1 {
+    color: #fff;
+    text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.384);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor4);
+    text-align: right;
+    margin: 0px;
+    padding: 0px 50px 10px 0px;
+}
+
+nav>a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav>a:hover {
+    background-color: var(--cor2);
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+main {
+    margin: 0px 50px;
+}
+
+a {
+    color: var(--cor2);
+}
+
+a:hover {
+    color: var(--cor3);
+}
+
+
+/*  div>p {
+    display: none;
+    text-align: center;
+}
+
+div:hover>p {
+    display: block;
+}
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 20px 0px 10px 0px;
+}
+
+h1 {
+    color: var(--cor4);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p {
+    margin: 5px 0px 5px 0px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+li {
+    padding: 3px 0px;
+}
+
+#borda_personalizada {
+    border: 12px solid transparent;
+    border-image: url('download.png') 50 repeat;
+}
+
+.panel {
+    display: inline-block;
+    background-color: #fafafa;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    margin: 10px 0px;
+    padding: 0px 12px;
+    width: 45%;
+    min-height: 500px;
+}
+
+.recuo_1 {
+    margin-left: 35px;
+}
+
+.recuo_2 {
+    margin-left: 70px;
+}

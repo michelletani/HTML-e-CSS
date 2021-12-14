@@ -40,6 +40,17 @@
             <p>A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela como a única possibilidade de criar o posicionamento de elementos de agrupamento semântico.
             </p>
             </br>
+            <h3>Imagens</h3>
+            <p>Para colocar imagem de forma que seja responsiva, é necessário utilizar o código abaixo:</p>
+            <p class="recuo_1">picture</p>
+            <p class="recuo_2">source media="(max-width: 1000px)" srcset="nome_da_imagem.jpg" type="image/png"</p>
+            <p class="recuo_2">source media="(max-width: 100px)" srcset="nome_da_imagem.jpg" type="image/png"</p>
+            <p class="recuo_2">img src="imagens/irina-blok.jpg" alt="Nome da imagem"</p>
+            <p class="recuo_1">picture</p><br>
+            <p>O navegador exibirá a imagem que se adequar ao tamanho da tela do dispositivo.</p>
+            <p><strong>Nota:</strong> Pode ser utilizado quantos "source" forem necessário, apenas deve ser indicada a largura máxima.</p>
+            <h3>Vídeos</h3>
+            <p>Para inserir vídeos de outros sites, como YouTube, é necessário copiar o ifreme do vídeo, através da opção "Compratilhar" e em seguida "Incorporar".</p>
             <h3>Modelo de Caixas</h3>
             <p>Uma caixa dentro de outra "Aninhamento"</p>
             <p>Tipos de caixa:</p>
@@ -179,15 +190,70 @@
         <p><strong>Ordem para inserir configurações:</strong></p>
         <p class="recuo_2">Width - style - color</p>
         <p class="recuo_2">exemplo: 10px solid black</p>
+        <h3>Cores</h3>
+        <h4>Gradiente</h4>
+        <p>Para utilizar gradiente, é necessário utilizar o código "background-image", inserir o tipo do gradiente, a direção e as cores.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">background-image: linear-gradient(to bottom, #38EFFC, #155C61);</p>
+
+        <h4>:Root</h4>
+        <p>Utilizada para deixar uma seleção de cores pré-definidas</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">:root {</p>
+        <p class="recuo_2">--cor0: #38EFFC;</p>
+        <p class="recuo_2">--cor1: #36D5E0;</p>
+        <p class="recuo_2">--cor2: #27A9B3;</p>
+        <p class="recuo_2">--cor3: #208C94;</p>
+        <p class="recuo_2">--cor4: #155C61;</p>
+        <p class="recuo_1">}</p>
         <br>
         <hr><br>
         <section>
             <h1>Material de Apoio</h1>
             <h3>Site de Paleta de Cores</h3>
+            <ul>
+                <li><a href="https://color.adobe.com/pt/create/color-wheel">Adobe Color</a></li>
+                <li><a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Paleton</a></li>
+                <li><a href="https://coolors.co/813405-d45113-f9a03f-f8dda4-ddf9c1">Coolors</a></li>
+            </ul>
             <h3>Site de Imagens</h3>
+            <ul>
+                <li><a href="https://www.freepik.com/home">Freepik</a></li>
+                <li><a href="https://pixabay.com/pt/">Pixabay</a></li>
+                <li><a href="https://www.pexels.com/pt-br/">Pexels</a></li>
+                <li><a href="https://www.rawpixel.com/?feed=creative-feed&page=1&sort=shuffle">Rawpixel</a></li>
+                <li><a href="https://unsplash.com/">Unsplash</a></li>
+                <li><a href="https://libreshot.com/">Libreshot</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/Category:Images">Wikimedia Commons</a></li>
+            </ul>
             <h3>Site de Ícones</h3>
+            <ul>
+                <li><a href="https://emojipedia.org/">Emojipedia</a></li>
+                <li><a href="https://iconarchive.com/">Icon Archive</a></li>
+                <li><a href="https://favicon.io/">Favicon</a></li>
+                <li><a href="https://www.favicon.cc/">Favicon (Criar)</a></li>
+            </ul>
+            <h3>Códigos CSS</h3>
+            <ul>
+                <li><a href="https://www.css3.info/">Códigos CSS</a></li>
+                <li><a href="http://css3generator.com/">Gerador de CSS</a></li>
+            </ul>
+            <h3>Outros</h3>
+            <ul>
+                <li><a href="https://www.mockflow.com/">Mockflow - Diagramação de sites</a></li>
+                <li><a href="https://www.scriptol.com/programming/list-programming-languages.php">Lista de linguagens de Programação</a></li>
+                <li><a href="http://edsonwanderley.com.br/apostila/ApostilaMSdoseCMD.pdf">Sistema Operacional da Microsoft</a></li>
+            </ul>
+            <h3>Cursos</h3>
+            <ul>
+                <li><a href="https://www.cursoemvideo.com//">CursoemVideo</a></li>
+                <li><a href="https://web.digitalinnovation.one/home">Digital Innovation One</a></li>
+            </ul>
         </section>
     </main>
+    <footer>Site desenvolvido por Michelle Tani</footer>
 </body>
+
+</html>
 
 </html>

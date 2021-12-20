@@ -32,7 +32,7 @@ nav {
     background-color: var(--cor4);
     text-align: right;
     margin: 0px;
-    padding: 0px 50px 10px 0px;
+    padding: 0px 100px 10px 0px;
 }
 
 nav>a {
@@ -50,7 +50,7 @@ nav>a:hover {
 }
 
 main {
-    margin: 0px 50px 20px 50px;
+    margin: 0px 100px 20px 100px;
 }
 
 footer {
@@ -69,24 +69,12 @@ a:hover {
     color: var(--cor3);
 }
 
-
-/*  div>p {
-    display: none;
-    text-align: center;
-}
-
-div:hover>p {
-    display: block;
-}
-
-*/
-
 h1,
 h2,
 h3,
 h4,
 h5 {
-    padding: 20px 0px 10px 0px;
+    padding: 30px 0px 10px 0px;
 }
 
 h1 {
@@ -119,12 +107,16 @@ p {
     margin: 5px 0px 5px 0px;
     line-height: 1.5em;
     text-align: justify;
+    background-position: left top;
 }
 
-ul {
+
+/* ul {
     list-style-type: '\2714\00A0\00A0';
     list-style-position: inside;
 }
+
+*/
 
 li {
     padding: 3px 0px;
@@ -141,10 +133,10 @@ li {
     background-color: #fafafa;
     border: 1px solid #b1b1b1;
     border-radius: 10px;
-    margin: 10px 0px;
+    margin: auto;
     padding: 0px 12px;
-    width: 45%;
-    min-height: 500px;
+    width: 400px;
+    min-height: 200px;
 }
 
 .recuo_1 {

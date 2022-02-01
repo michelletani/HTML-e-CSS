@@ -20,184 +20,424 @@
         <a href="#">Material de Apoio</a>
     </nav>
     <main>
-        <section>
-            <h1>Linguagem HTML</h1>
-            <h2>Tags</h2>
-            <h3>Main</h3>
-            <p>É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos. </p>
-            <h3>Section</h3>
-            <p>Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente
-                com um cabeçalho”.
-            </p>
-            <h3>Article</h3>
-            <p>Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um "Article" para delimitar um post de blog ou fórum, uma notícia, etc.</p>
-            <h3>Aside</h3>
-            <p>Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo "aside" está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto
-                apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”.</p>
-            <h3>Footer</h3>
-            <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um "aside"), mas possui informações sobre autoria do conteúdo, links adicionais,
-                mapa do site, documentos relacionados</p>
-            <p>A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela como a única possibilidade de criar o posicionamento de elementos de agrupamento semântico.
-            </p>
-            </br>
-            <h3>Imagens</h3>
-            <p>Para colocar imagem de forma que seja responsiva, é necessário utilizar o código abaixo:</p>
-            <p class="recuo_1">picture</p>
-            <p class="recuo_2">source media="(max-width: 1000px)" srcset="nome_da_imagem.jpg" type="image/png"</p>
-            <p class="recuo_2">source media="(max-width: 100px)" srcset="nome_da_imagem.jpg" type="image/png"</p>
-            <p class="recuo_2">img src="imagens/irina-blok.jpg" alt="Nome da imagem"</p>
-            <p class="recuo_1">picture</p><br>
-            <p>O navegador exibirá a imagem que se adequar ao tamanho da tela do dispositivo.</p>
-            <p><strong>Nota:</strong> Pode ser utilizado quantos "source" forem necessário, apenas deve ser indicada a largura máxima.</p>
-            <h4>Background-Repeat</h4>
-            <p>Para inserir uma imagem de fundo de tamanho menor que o fundo, e que se repete, é utilizado o "background-repeat".</p>
-            <img src="imagens/background-repeat.png" alt="background-repeat" width="500px">
-            <h4>Background-Position</h4>
-            <p>Caso seja necessário selecionar o local em que a respetição irá iniciar, utilizar o código "background-position".</p>
-            <img src="imagens/background-position.png" alt="background-position" width="300px">
-            <h4>Background-Attachment</h4>
-            <p><strong>scroll - </strong>A imagem rola junto com o conteúdo.</p>
-            <p><strong>fixed - </strong>A imagem de fundo fica fixa, enquanto o conteúdo é rolado.</p>
-            <h4>Shorthand de Background</h4>
-            <p>Para utilizar a shorthand do Background, as informações devem seguir a ordem:</p>
-            <ul>
-                <li>background-color</li>
-                <li>background-image</li>
-                <li>background-position</li>
-                <li>background-repeat</li>
-                <li>background-size</li>
-                <li>background-attachment</li>
-            </ul>
-            <p>Obs.: O background-size não funciona no shorthand atualmente, portanto é necessário que seja inserido separado da shorthand.</p>
-            <h3>Vídeos</h3>
-            <p>Para inserir vídeos de outros sites, como YouTube, é necessário copiar o ifreme do vídeo, através da opção "Compratilhar" e em seguida "Incorporar".</p>
-            <h3>Modelo de Caixas</h3>
-            <p>Uma caixa dentro de outra "Aninhamento"</p>
-            <p>Tipos de caixa:</p>
-            <div class="panel">
-                <h4>Box-level</h4>
-                <p>Sempre inicia em uma linha nova, ocupa a largura inteira e quebra a linha.</p>
-                <p>Exemplos:</p>
+        <h1>Linguagem HTML</h1>
+        <h2>Main</h2>
+        <p>É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos. </p>
+        <h2>Section</h2>
+        <p>Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente
+            com um cabeçalho”.
+        </p>
+        <h2>Article</h2>
+        <p>Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um "Article" para delimitar um post de blog ou fórum, uma notícia, etc.</p>
+        <h2>Aside</h2>
+        <p>Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo "aside" está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado
+            anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”.</p>
+        <h2>Footer</h2>
+        <p>Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um "aside"), mas possui informações sobre autoria do conteúdo, links adicionais, mapa
+            do site, documentos relacionados</p>
+        <p>A seguir, vou criar uma proposta de estrutura para um projeto de site. Não tome ela como a única possibilidade de criar o posicionamento de elementos de agrupamento semântico.
+        </p>
+        <h2>Input</h2>
+        <p>O input é mais utilizado para inserir checklists, botões, entre outros.</p>
+        <h3>Radio</h3>
+        <p>O input do tipo <em>radio</em> possui o campo de check redondo, e pode ser selecionada apenas uma opção.</p>
+        <p>Precisa ter a mesma informação em <em>name</em> e no primeiro input precisa ter a informação <em>checked</em>.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">&lt;input type="radio" name="numero" id="1" checked&gt;</p>
+        <p class="recuo_1">&lt;label for="1"&gt;Número 1&lt;/label&gt;</p>
+        <p class="recuo_1">&lt;input type="radio" name="numero" id="2"&gt;</p>
+        <p class="recuo_1">&lt;label for="2"&gt;Número 2&lt;/label&gt;</p>
+        <h2>Select</h2>
+        <p>Dentro de <em>select</em> precisa ter <em>option</em>, uma para cada opção.</p>
+        <p>Caso precise deixar a caixa aberta, deve ser inserida a opção <em>size</em> com o número de linhas (options) que serão utilizadas.</p>
+        <p><strong>Obs.:</strong> Toda <em>option</em> precisa ter o <em>value</em>.</p>
+
+        <h2>Form</h2>
+        <p>Atributos básico:</p>
+        <ul>
+            <li><strong>action:</strong> Para onde o formulário será submetido, para onde as informações serão enviadas (mesma página, outra página).</li>
+            <li><strong>method:</strong>
                 <ul>
-                    <li>h1 - h6</li>
-                    <li>p</li>
-                    <li>div</li>
-                    <li>main</li>
-                    <li>header</li>
-                    <li>nav</li>
-                    <li>article</li>
-                    <li>aside</li>
-                    <li>footer</li>
-                    <li>form</li>
-                    <li>video</li>
+                    <li><strong>GET:</strong> Os dados aparecem no caminho do link</li>
+                    <li><strong>POST:</strong> Os dados não aparecem no caminho do link</li>
                 </ul>
-            </div>
-            <div class="panel">
-                <h4>Inline-level</h4>
-                <p>Continua na mesma linha do conteúdo, não quebra a linha e a caixa ocupa exatamente o tamanho do conteúdo inserido na caixa.</p>
-                <p>Exemplos:</p>
-                <ul>
-                    <li>a</li>
-                    <li>strong</li>
-                    <li>span</li>
-                    <li>code</li>
-                    <li>small</li>
-                    <li>em</li>
-                    <li>sup</li>
-                    <li>sub</li>
-                    <li>label</li>
-                    <li>button</li>
-                    <li>input</li>
-                    <li>select</li>
-                </ul>
-            </div>
-            <h4>Posicionamento de caixas / imagens</h4>
-            <p>Para posicionar a caixa/imagem em um ponto fixo na página, é necessário utilizar as seguintes configurações:</p>
-            <p class="recuo_1">position: absolute;</p>
-            <p class="recuo_1">left: 50%;</p>
-            <p class="recuo_1">top: 50%;</p>
-            <p class="recuo_1">transform: (-50%, -50%);</p>
-            <p><strong>Obs.:</strong> Os valores em porcentagem são apenas exemplos, os mesmos podem e devem ser alterados de acordo com a necessidade.</p>
-        </section>
+            </li>
+        </ul>
+
+        <h3>Fieldset</h3>
+        <p>Serve para agrupar campos. Ele não precisa estar dentro do formulário, mas é preciso ter o ID.</p>
+        <p>Atributos:</p><br>
+        <p><strong>form / id</strong></p>
+        <p>Utilizados para vincular o fielset com o formulário. O atributo <em>form</em> é inserido no fieldset e o <em>id</em> na tag form.</p><br>
+        <p><strong>Legend</strong></p>
+        <p>Nome do agrupamento, é o primeiro elemento do fieldset.</p><br>
+        <p><strong>Disable</strong></p>
+        <p>Desabilita todos os elementos internos. Não serão enviados ao submeter o formulário.</p><br>
+        <p>Exemplo:</p>
+        <img src="imagens/formulario.png" alt="formulario" width="800px;"><br>
+
+        <p><strong>Label</strong></p>
+        <p>Disponibiliza o texto do campo o formulário.</p>
+        <p>O atributo <em>for</em> serve para fazer a conexão entre o <em>label</em> e a <em>tag</em> de entrada de dados.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">&lt;label for="nome"&gt;&lt;/label&gt;</p>
+        <p class="recuo_1">&lt;input id="nome" type="text"&gt;</p>
+        <p><strong>Obs.:</strong> A informação de <em>for</em> e <em>id</em> precisam ser a mesma.</p>
+
+        <h3>Datalist</h3>
+        <p>Introduz uma lista pré-definida.</p>
+        <p>Exemplo:</p>
+        <img src="imagens/datalist.png" alt="">
+
+        <h2>Imagens</h2>
+        <h3>Responsividade</h3>
+        <p>Para colocar imagem de forma que seja responsiva, é necessário utilizar o código abaixo:</p>
+        <p class="recuo_1">picture</p>
+        <p class="recuo_2">source media="(max-width: 1000px)" srcset="nome_da_imagem.jpg" type="image/png"</p>
+        <p class="recuo_2">source media="(max-width: 100px)" srcset="nome_da_imagem.jpg" type="image/png"</p>
+        <p class="recuo_2">img src="imagens/irina-blok.jpg" alt="Nome da imagem"</p>
+        <p class="recuo_1">picture</p><br>
+        <p>O navegador exibirá a imagem que se adequar ao tamanho da tela do dispositivo.</p>
+        <p><strong>Nota:</strong> Pode ser utilizado quantos "source" forem necessário, apenas deve ser indicada a largura máxima.</p>
+
+        <h3>Legenda</h3>
+        <p>Para inserir legenda na imagem utiliza-se a tag <em>figure</em> e <em>figcaption</em>.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">&lt;a href="https://google.com"&gt;</p>
+        <p class="recuo_2">&lt;figure&gt;</p>
+        <p class="recuo_3">&lt;img src="https://google.com" alt=""&gt;</p>
+        <p class="recuo_3">&lt;figcaption&gt; Legenda &lt;/figcaption&gt;</p>
+        <p class="recuo_2">&lt;/figure&gt;</p>
+        <p class="recuo_1">&lt;/a&gt;</p>
+
+        <h2>Vídeos</h2>
+        <p>Pode haver navegador que não suportará o tipo do arquivo, por isso é importante deixar isso especificado.</p>
+        <p>Controles:</p>
+        <ul>
+            <li>source - Para colocar mais de uma opção de vídeo, dessa forma caso o navegador não consiga ler a primera opção ele irá para a segunda, e assim por diante.</li>
+            <li>type - O tipo de arquivo (.mp4, etc.)</li>
+            <li>controls - Para o usuário interagir com o vídeo (dar play, etc.)</li>
+            <li>autoplay - Para o vídeo disparar no momento em que a página carregar.</li>
+            <li>preload - Para carregar algumas informações, como por exemplo quanto tempo o vídeo possui.</li>
+            <li>loop - Para o vídeo disparar novamente quando chegar no final.</li>
+            <li>muted - Para o vídeo começar mutado.</li>
+            <li>poster - Para deixar uma imagem de fundo emquanto o vídeo não começa.</li>
+        </ul>
+        <p>Exemplo:</p>
+        <p class="recuo_1">&lt;video controls autoplay preload="metadata" loop muted poster="download.png"&gt;</p>
+        <p class="recuo_2">&lt;source src="download.mp4" type="video/mp4"&gt;</p>
+        <p class="recuo_2">&lt;source src="download.wmv" type="video/wmv"&gt;</p>
+        <p class="recuo_1">&lt;/video&gt;</p>
+
+        <p>Para inserir vídeos de outros sites, como YouTube, é necessário copiar o ifreme do vídeo, através da opção "Compratilhar" e em seguida "Incorporar".</p>
+
+        <h2>Tabela</h2>
+        <img src="imagens/table.png" alt="table" width="800px">
+        <p>caption - Texto anterior à tabela</p>
+        <p>col - Utilizado para inserir configuração na coluna</p>
+        <p>span - Quantidade de colunas que serão configuradas (se for mais de uma coluna)</p>
+        <br>
+        <img src="imagens/table_2.png" alt="table" width="800px">
+        <p>rowspan - Para mesclar 2 ou mais linhas</p>
+        <p>colspan - Para mesclar 2 ou mais colunas</p>
+        <p>scope - O escopo da tabela</p>
+        <ul>
+            <li>colgroup - Agrupamento de colunas</li>
+            <li>col - Colunas</li>
+            <li>row - Linhas</li>
+        </ul>
+
+        <h2>Links</h2>
+        <h3>Fragmento</h3>
+        <p>Utilizado para chamar uma seção na página.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">&lt;ul&gt;</p>
+        <p class="recuo_2">&lt;li&gt;&lt; a href="#secao_1"&gt;Seção 1&lt;/li&gt;</p>
+        <p class="recuo_2">&lt;li&gt;&lt; a href="#secao_2"&gt;Seção 2&lt;/li&gt;</p>
+        <p class="recuo_2">&lt;li&gt;&lt; a href="#secao_3"&gt;Seção 3&lt;/li&gt;</p>
+        <p class="recuo_1">&lt;/ul&gt;</p>
+        <p class="recuo_1">&lt;h1 id="secao_1"&gt;Seção 1&lt;/h1&gt;</p>
+        <p class="recuo_1">&lt;h1 id="secao_2"&gt;Seção 2&lt;/h1&gt;</p>
+        <p class="recuo_1">&lt;h1 id="secao_2"&gt;Seção 3&lt;/h1&gt;</p>
+
+        <h2>Modelo de Caixas</h2>
+        <p>Uma caixa dentro de outra "Aninhamento"</p>
+        <p>Tipos de caixa:</p>
+        <h3>Box-level</h3>
+        <p>Sempre inicia em uma linha nova, ocupa a largura inteira e quebra a linha.</p>
+        <p>Exemplos:</p>
+        <ul>
+            <li>h1 - h6</li>
+            <li>p</li>
+            <li>div</li>
+            <li>main</li>
+            <li>header</li>
+            <li>nav</li>
+            <li>article</li>
+            <li>aside</li>
+            <li>footer</li>
+            <li>form</li>
+            <li>video</li>
+        </ul>
+        <h3>Inline-level</h3>
+        <p>Continua na mesma linha do conteúdo, não quebra a linha e a caixa ocupa exatamente o tamanho do conteúdo inserido na caixa.</p>
+        <p>Exemplos:</p>
+        <ul>
+            <li>a</li>
+            <li>strong</li>
+            <li>span</li>
+            <li>code</li>
+            <li>small</li>
+            <li>em</li>
+            <li>sup</li>
+            <li>sub</li>
+            <li>label</li>
+            <li>button</li>
+            <li>input</li>
+            <li>select</li>
+        </ul>
+        <h3>Posicionamento de caixas / imagens</h3>
+        <p>O position indica onde o elemento vai ser posicionado na página. Ao usar o position podemos adicionar outras propriedades como top, right, bottom, left e z-index, que vão determinar o posicionamento final do elemento.</p>
+        <p>Tipos de <em>position</em>:</p>
+        <ul>
+            <li>static</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+        </ul>
+
+        <h4>static</h4>
+        <p>Por padrão os elementos são static. Isso significa que os elementos irão seguir o fluxo normal do HTML.</p>
+
+        <h4>relative</h4>
+        <p>Quando o position é relative os elementos são deslocados do seu posicionamento normal, mas sem afetar o posicionamento de outros elementos da página.</p>
+
+        <h4>absolute</h4>
+        <p>Quando o position é absolute o elemento é deslocado saindo do fluxo normal. O elemento de position absolute é posicionado em relação ao seu parent element mais próximo. Se esse elemento "pai" não existir, ele será posicionando em relação ao bloco
+            contendo a raiz do elemento.</p>
+
+        <h4>fixed</h4>
+        <p>Quando aplicado o position fixed é como se criasse um elemento flutuante que fica fixo na página, independente do scrolling feito.</p><br>
+
+        <p><strong>Exemplo:</strong> Para posicionar a caixa/imagem em um ponto fixo na página, é necessário utilizar as seguintes configurações:</p>
+        <p class="recuo_1">position: absolute;</p>
+        <p class="recuo_1">left: 50%;</p>
+        <p class="recuo_1">top: 50%;</p>
+        <p class="recuo_1">transform: (-50%, -50%);</p>
+        <p><strong>Obs.:</strong> Os valores em porcentagem são apenas exemplos, os mesmos podem e devem ser alterados de acordo com a necessidade.</p>
+
+        <h4>Element Stacking</h4>
+        <p>É o empilhamento de elementos. Podemos usar o z-index para determinar a ordem da posição do elemento. Quanto maior o z-index, mais "acima" vai aparecer o elemento.</p>
+        <p>top, right, bottom e left indicam a o recuo que será definido para o elemento.</p>
+        <img src="imagens/z_index.png" alt="">
+        <p>Exemplo:</p>
+        <p class="recuo_1">.box1 {</p>
+        <p class="recuo_2">background-color: red;</p>
+        <p class="recuo_2">position: absolute;</p>
+        <p class="recuo_2">left: 5px;</p>
+        <p class="recuo_2">top: 5px;</p>
+        <p class="recuo_2">z-index: 3;</p>
+        <p class="recuo_1">}</p>
+        <p class="recuo_1">.box2 {</p>
+        <p class="recuo_2">background-color: green;</p>
+        <p class="recuo_2">position: absolute;</p>
+        <p class="recuo_2">left: 10px;</p>
+        <p class="recuo_2">top: 10px</p>
+        <p class="recuo_1">}</p>
+
+        <h4>Flexbox</h4>
+        <p>Nos permite posicionar os elementos dentro da caixa</p>
+        <p>Controle em uma dimensão (horizontal ou vertical)</p>
+        <p>Alinhamento, direcionamento, ordenar e tamanhos</p>
+
+        <h5>Flex-direction</h5>
+        <p>Indica qual a direção do flex: horizontal ou vertical </p>
+        <p><strong>row -</strong> horizontal</p>
+        <p><strong>column -</strong> vertical</p>
+
+        <h5>Alinhamento</h5>
+        <p><strong>justify-content -</strong> Alinha o conteúdo</p>
+        <p><strong>align-items -</strong> Alinha os itens</p>
+
+        <h4>Grid</h4>
+        <img src="imagens/grid.png" alt="" width="800px">
+
         <br>
         <hr><br>
-        <section>
-            <h1>Linguagem CSS</h1>
-            <div class="panel">
-                <h4>ID</h4>
-                <p>O id só pode ser utilizado para um único elemento.</p>
-                <p>Não pode ser utilizado espaço na nomenclatura.</p>
-                <p>Ex.: nome_do_id</p>
-                <p>Para inserir no código, é utilizada a "#"</p>
-                <p>Ex.: </p>
-                <p class="recuo_1">#nome_do_id { </p>
-                <p class="recuo_2">font-family: ... </p>
-                <p class="recuo_2">color: ... </p>
-                <p class="recuo_2">... </p>
-                <p class="recuo_1">} </p>
-            </div>
-            <div class="panel">
-                <h4>Class</h4>
-                <p>A class pode ser utilizada para diversos elementos.</p>
-                <p>Não pode ser utilizado espaço na nomenclatura.</p>
-                <p>Ex.: nome_da_class</p>
-                <p>Para inserir no código, é utilizado o "."</p>
-                <p>Ex.: </p>
-                <p class="recuo_1">.nome_da_class { </p>
-                <p class="recuo_2">font-family: ... </p>
-                <p class="recuo_2">color: ... </p>
-                <p class="recuo_2">... </p>
-                <p class="recuo_1">} </p>
-            </div>
-            <div class="panel">
-                <h4>Pseudo-classes</h4>
-                <p>É o estado de um determinado elemento no HTML.</p>
-                <p>Representado por "":"</p>
-                <p>Ex.:</p>
-                <p class="recuo_1">a: visited {</p>
-                <p class="recuo_2">color: #red</p>
-                <p class="recuo_1">}</p>
-            </div>
-            <div class="panel">
-                <h4>Pseudo-elementos</h4>
-                <p>Age nas classes, id, elementos, etc. Eles agem no conteúdo.</p>
-                <p>Representado por ""::"</p>
-                <p>Ex.:</p>
-                <p class="recuo_1">a:: after {</p>
-                <p class="recuo_2">content: ' link';</p>
-                <p class="recuo_1">}</p>
-            </div>
-            <div class="panel">
-                <h4>Sombras nas caixas</h4>
-                <p>A propriedade box-shadow e seus quatro valores (ordem):</p>
-                <ul>
-                    <li><strong>Deslocamento horizontal (h-offset):</strong> quanto a sombra vai andar para o lado direito (valores negativos causam deslocamento para a esquerda)</li>
-                    <li><strong>Deslocamento vertical (v-offset):</strong> quanto a sombra vai andar para baixo (valores negativos causam deslocamento para cima)</li>
-                    <li><strong>Embaçamento (blur):</strong> quanto a sombra vai se espalhar pelo fundo</li>
-                    <li><strong>Cor (color):</strong> cor da sombra. É possível usar transparência.</li>
-                </ul>
-                <p>Exemplo:</p>
-                <p class="recuo_1">box-shadow: 3px 5px 4px black;</p>
-                <p>Para sombras <strong>internar</strong> utlizar o "inset".</p>
-                <p>Exemplo:</p>
-                <p class="recuo_1">box-shadow: inset 3px 5px 4px black;</p>
-            </div>
-            <div class="panel">
-                <h4>Bordas</h4>
-                <h4>Bordas arredondadas</h4>
-                <p><strong>border-radius:</strong> arredonda os vértices</p>
-                <p>Exemplos:</p>
-                <p class="recuo_1">border-radius: 10px 10px 10px 10px</p>
-                <p class="recuo_1">border-radius: 10px 10px</p>
-                <p class="recuo_1">border-radius: 10px</p>
-                <h4>Bordas personalizadas</h4>
-                <p><strong>border-image: </strong>Utiliza uma imagem como borda.</p>
-                <p>Exemplo:</p>
-                <p class="recuo_1">border: 12px solid transparent;</p>
-                <p class="recuo_1">border-image: url('download.png') 50 repeat;</p>
-                <p><strong>Nota:</strong> Precisa ter a informação da borda.</p>
-            </div>
-        </section>
+        <h1>Linguagem CSS</h1>
+        <h2>ID</h2>
+        <p>O id só pode ser utilizado para um único elemento.</p>
+        <p>Não pode ser utilizado espaço na nomenclatura.</p>
+        <p>Ex.: nome_do_id</p>
+        <p>Para inserir no código, é utilizada a "#"</p>
+        <p>Ex.: </p>
+        <p class="recuo_1">#nome_do_id { </p>
+        <p class="recuo_2">font-family: ... </p>
+        <p class="recuo_2">color: ... </p>
+        <p class="recuo_2">... </p>
+        <p class="recuo_1">} </p>
+        <h2>Class</h2>
+        <p>A class pode ser utilizada para diversos elementos.</p>
+        <p>Não pode ser utilizado espaço na nomenclatura.</p>
+        <p>Ex.: nome_da_class</p>
+        <p>Para inserir no código, é utilizado o "."</p>
+        <p>Ex.: </p>
+        <p class="recuo_1">.nome_da_class { </p>
+        <p class="recuo_2">font-family: ... </p>
+        <p class="recuo_2">color: ... </p>
+        <p class="recuo_2">... </p>
+        <p class="recuo_1">} </p>
+        <h2>Pseudo-classes</h2>
+        <p>É o estado de um determinado elemento no HTML.</p>
+        <p>Representado por "":"</p>
+        <p>Ex.:</p>
+        <p class="recuo_1">a: visited {</p>
+        <p class="recuo_2">color: #red</p>
+        <p class="recuo_1">}</p>
+        <h2>Pseudo-elementos</h2>
+        <p>Age nas classes, id, elementos, etc. Eles agem no conteúdo.</p>
+        <p>Representado por ""::"</p>
+        <p>Ex.:</p>
+        <p class="recuo_1">a:: after {</p>
+        <p class="recuo_2">content: ' link';</p>
+        <p class="recuo_1">}</p>
+
+        <h2>Fontes</h2>
+
+        <h3>Font Variant</h3>
+        <p>Faz variações na apresentação da fonte.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">font-variant: small-caps;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Font Stretch</h3>
+        <p>Utilizada para alargamento ou encolhimento da fonte.</p>
+        <p>Aceita palavras-chaves como: expanded, condensed, normal.</p>
+        <p>Aceita porcentagens de 50% a 200%.</p>
+        <p><strong>Obs.: </strong>Essa propriedade não vai funcionar em todas as fontes.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">font-stretch: expanded;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Letter spacing</h3>
+        <p>Define o espaçamento entre os caracteres.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">letter-spacing: 4px;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Word spacing</h3>
+        <p>Define o espaçamento entre palavras.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">word-spacing: 1em;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Line height</h3>
+        <p>Define os espaços entre linhas.</p>
+        <p>Pode ser com unidades ou sem unidades de medida.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">line-height: 1.5;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Text transform</h3>
+        <p>Transformação do texto.</p>
+        <p>Valores podem ser: none | capitalize | uppercase | lowercase | full-width | full-size-kana</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">text-transform: uppercase;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Text-decoration</h3>
+        <p>Aparência decorativa de um texto.</p>
+        <ul>
+            <li><strong>line:</strong> underline | overline | line-through</li>
+            <li><strong>style:</strong> wavy | dotted | double | dashed | solid</li>
+            <li><strong>color:</strong> &lt;color&gt; values</li>
+        </ul>
+        <p><strong>Obs.:</strong> Podemos aplicar mais de 1 valor</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">text-decoration: wavy overline blue;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Text-shadow</h3>
+        <p>Sombra aplicada a um texto.</p>
+        <p>As informações são dispostas como: offset-x | offset-y | blur-radius | color</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">text-shadow: 1px 1px 1px red;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Shorthand </h3>
+        <p><strong>Ordem: </strong>font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;</p>
+        <p class="recuo_1">}</p>
+
+        <h3>Fontes externas</h3>
+        <p>Fontes para web:</p>
+        <ul>
+            <li>@font-face</li>
+            <li>@import</li>
+            <li>link</li>
+        </ul>
+        <h4>@font-face</h4>
+        <p>Utilizamos um arquivo fonte, e inserimos o nome com extensão na <em>url</em> e em <em>font-family</em> colocamos o nome da fonte.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">@font-face {</p>
+        <p class="recuo_2">font-family: 'Noto Sans';</p>
+        <p class="recuo_2">src: url('NotoSans-Regular.ttf') format('truetype');</p>
+        <p class="recuo_1">}</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">font-family: 'Noto Sans', sans-serif; </p>
+        <p class="recuo_1">}</p>
+
+        <h4>@import</h4>
+        <p>Para inserir uma fonte do google.</p>
+        <img src="imagens/google_fonts.png" alt="Google_Fonts" width="800px">
+        <p>Exemplo:</p>
+        <p class="recuo_1">@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');</p>
+        <p class="recuo_1">}</p>
+        <p class="recuo_1">p {</p>
+        <p class="recuo_2">font-family: 'Noto Sans', sans-serif;</p>
+        <p class="recuo_1">}</p>
+
+        <h4>Link</h4>
+        <p>O link é inserido no <em>head</em> do HTML.</p>
+        <img src="imagens/google_font_link.png" alt="Google_Fonts_Links" width="800px">
+
+
+        <h2>Sombras nas caixas</h2>
+        <p>A propriedade box-shadow e seus quatro valores (ordem):</p>
+        <ul>
+            <li><strong>Deslocamento horizontal (h-offset):</strong> quanto a sombra vai andar para o lado direito (valores negativos causam deslocamento para a esquerda)</li>
+            <li><strong>Deslocamento vertical (v-offset):</strong> quanto a sombra vai andar para baixo (valores negativos causam deslocamento para cima)</li>
+            <li><strong>Embaçamento (blur):</strong> quanto a sombra vai se espalhar pelo fundo</li>
+            <li><strong>Cor (color):</strong> cor da sombra. É possível usar transparência.</li>
+        </ul>
+        <p>Exemplo:</p>
+        <p class="recuo_1">box-shadow: 3px 5px 4px black;</p>
+        <p>Para sombras <strong>internar</strong> utlizar o "inset".</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">box-shadow: inset 3px 5px 4px black;</p>
+        <h2>Bordas</h2>
+        <h3>Bordas arredondadas</h3>
+        <p><strong>border-radius:</strong> arredonda os vértices</p>
+        <p>Exemplos:</p>
+        <p class="recuo_1">border-radius: 10px 10px 10px 10px</p>
+        <p class="recuo_1">border-radius: 10px 10px</p>
+        <p class="recuo_1">border-radius: 10px</p>
+        <h3>Bordas personalizadas</h3>
+        <p><strong>border-image: </strong>Utiliza uma imagem como borda.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">border: 12px solid transparent;</p>
+        <p class="recuo_1">border-image: url('download.png') 50 repeat;</p>
+        <p><strong>Nota:</strong> Precisa ter a informação da borda.</p>
         <h4>Padding</h4>
         <p>Margem dentro da caixa, margem entre a borda da caixa e o conteúdo.</p>
         <h4>Border</h4>
@@ -233,7 +473,58 @@
         <p class="recuo_2">--cor3: #208C94;</p>
         <p class="recuo_2">--cor4: #155C61;</p>
         <p class="recuo_1">}</p>
+
+        <h2>Background</h2>
+        <h3>Background-Image</h3>
+        <p>Para inserir o link de uma imagem externa.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">background-image: url(https://www.tecmundo.com.br/software/119207-saiba-4-principais-formatos-imagens.htm)</p>
+
+        <h3>Background-Repeat</h3>
+        <p>Para inserir uma imagem de fundo de tamanho menor que o fundo, e que se repete, é utilizado o "background-repeat".</p>
+        <img src="imagens/background-repeat.png" alt="background-repeat" width="500px">
+
+        <h3>Background-Position</h3>
+        <p>Define o posição da imagem.</p>
+        <img src="imagens/background-position.png" alt="background-position" width="300px">
+        <p>Exemplo:</p>
+        <p class="recuo_1">background-position: center center</p>
+
+        <h3>Background-Size</h3>
+        <p>Indica o tamanho que a imagem de fundo terá.</p>
+        <p>Pode ser definida com %, px, em, etc., sendo o primeiro valor referente à largura e o segundo à altura.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">background-size: 50em 50em</p>
+
+        <h3>Background-Origin</h3>
+        <p>Define o ponto de origem de uma imagem específica.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">background-origin: border-box</p>
+
+        <h3>Background-Clip</h3>
+        <p>Define se a cor ou imagem do background iniciam debaixo de sua área de borda, preenchimento ou conteúdo.</p>
+        <p>Exemplo:</p>
+        <p class="recuo_1">background-clip: text</p>
+
+        <h3>Background-Attachment</h3>
+        <p><strong>scroll - </strong>A imagem rola junto com o conteúdo.</p>
+        <p><strong>fixed - </strong>A imagem de fundo fica fixa, enquanto o conteúdo é rolado.</p>
+
+        <h3>Shorthand de Background</h3>
+        <p>Para utilizar a shorthand do Background, as informações devem seguir a ordem:</p>
+        <ul>
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-repeat</li>
+            <li>background-position</li>
+            <li>background-size</li>
+            <li>background-origin</li>
+            <li>background-clip</li>
+            <li>background-attachment</li>
+        </ul>
+        <p><strong>Obs.:</strong> O background-size não funciona no shorthand atualmente, portanto é necessário que seja inserido separado da shorthand.</p>
         <br>
+
         <hr><br>
         <section>
             <h1>Material de Apoio</h1>
@@ -264,9 +555,12 @@
             <ul>
                 <li><a href="https://www.css3.info/">Códigos CSS</a></li>
                 <li><a href="http://css3generator.com/">Gerador de CSS</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties">Shorthands</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">Documentação do MDN - Mozilla</a></li>
             </ul>
             <h3>Outros</h3>
             <ul>
+                <li><a href="https://codepen.io/pen/">CodePen - HTML, CSS e JavaScript</a></li>
                 <li><a href="https://www.mockflow.com/">Mockflow - Diagramação de sites</a></li>
                 <li><a href="https://www.scriptol.com/programming/list-programming-languages.php">Lista de linguagens de Programação</a></li>
                 <li><a href="http://edsonwanderley.com.br/apostila/ApostilaMSdoseCMD.pdf">Sistema Operacional da Microsoft</a></li>
@@ -275,11 +569,16 @@
             <ul>
                 <li><a href="https://www.cursoemvideo.com//">CursoemVideo</a></li>
                 <li><a href="https://web.digitalinnovation.one/home">Digital Innovation One</a></li>
+                <li><a href="https://app.rocketseat.com.br/">Rockseat</a></li>
             </ul>
         </section>
     </main>
     <footer>Site desenvolvido por Michelle Tani</footer>
 </body>
+
+</html>
+
+</html>
 
 </html>
 

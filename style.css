@@ -120,7 +120,7 @@ p {
 
 li {
     padding: 3px 0px;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
 #borda_personalizada {
@@ -145,4 +145,8 @@ li {
 
 .recuo_2 {
     margin-left: 50px;
+}
+
+.recuo_3 {
+    padding-left: 75px;
 }
